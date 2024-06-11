@@ -1,0 +1,31 @@
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* Enables snapping */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.scroll-container::before,
+.scroll-container::after {
+    content: '';
+    flex: 0 0 30vw; /* Adjust this value as needed */
+}
+
+.item {
+    flex: 0 0 auto; /* Prevents items from stretching */
+    width: 50vw; /* Smaller than the viewport to allow partial visibility of adjacent items */
+    height: 50px; /* Adjust height as needed */
+    scroll-snap-align: center; /* Ensures items snap to the center */
+    text-align: center;
+    line-height: 50px; /* Aligns text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #ccc; /* Optional, add visual separation */
+    margin: 10px;
+}

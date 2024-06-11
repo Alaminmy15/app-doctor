@@ -1,0 +1,29 @@
+<ion-card mode="md" class="no-border-shadow" *ngFor="let doctor of doctors">
+  <ion-card-content>
+    <div class="card-top">
+      <div class="card-top-start">
+        <ion-avatar slot="start" class="image">
+          <img [src]="doctor.avatar" />
+        </ion-avatar>
+      </div>
+      <div class="card-top-center">
+        <ion-card-title style="color: black; font-size: 15px; font-weight: bold;">{{ doctor.name }}</ion-card-title>
+        <ion-card-subtitle style="color: rgb(188, 188, 188); font-size: 12px;">{{ doctor.specialty }}</ion-card-subtitle>
+      </div>
+    </div>
+    <hr>
+    <div class="card-bottom">
+      <div class="card-left">
+        <ion-icon style="color: rgb(120, 120, 120);" class="small-icons" slot="start" name="calendar-outline"></ion-icon>
+        <ion-text style="color: rgb(120, 120, 120);">{{ doctor.date }}</ion-text>
+      </div>
+      <div class="card-right">
+        <ion-icon style="color: rgb(120, 120, 120)" class="small-icons" slot="start" name="time-outline"></ion-icon>
+        <ion-text style="color: rgb(120, 120, 120)">{{ doctor.time }}</ion-text>
+      </div>
+    </div>
+    <div class="button">
+      <ion-button style="color: blue;" expand="block" mode="ios">Details</ion-button>
+    </div>
+  </ion-card-content>
+</ion-card>

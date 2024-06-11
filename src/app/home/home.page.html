@@ -1,0 +1,41 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title mode="md" class="ion-no-padding">
+      <ion-label>
+        <ion-text color="dark">Hello,</ion-text>
+        <p><ion-text style="color: black;"><strong>Hi Alamin</strong></ion-text></p>
+      </ion-label>
+    </ion-title>
+    <ion-avatar slot="end">
+      <img src="assets/img.jpeg" />
+    </ion-avatar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <app-general-doctor-details></app-general-doctor-details>
+  <div class="searchbar">
+    <ion-searchbar mode="ios" placeholder="Search doctor or health issue"></ion-searchbar>
+  </div>
+  <div class="features">
+    <ion-row>
+      <ion-col class="features-col">
+        <ion-icon class="feature-icon" name="ban-outline"></ion-icon>
+        <p>Covid 19</p>
+      </ion-col>
+      <ion-col class="features-col">
+        <ion-icon class="feature-icon" name="bed-outline"></ion-icon>
+        <p>Doctor</p>
+      </ion-col>
+      <ion-col class="features-col">
+        <ion-icon class="feature-icon" name="medkit-outline"></ion-icon>
+        <p>Medicine</p>
+      </ion-col>
+      <ion-col class="features-col">
+        <ion-icon class="feature-icon" name="medical-outline"></ion-icon>
+        <p>Hospital</p>
+      </ion-col>
+    </ion-row>
+  </div>
+  <app-doctor-review-card></app-doctor-review-card>
+</ion-content>

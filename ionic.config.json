@@ -1,0 +1,7 @@
+{
+  "name": "app-doctor",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

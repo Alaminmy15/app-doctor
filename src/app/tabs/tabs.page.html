@@ -1,0 +1,22 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button (click)="onClick()" color="primary" tab="home" href="/tabs/home">
+      <ion-icon aria-hidden="true" name="home-outline"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="onClick(true)" tab="schedules" href="/tabs/schedules">
+      <ion-icon aria-hidden="true" name="calendar-outline"></ion-icon>
+      <div [hidden]="!showLabel">
+        <ion-label>Schedule</ion-label>
+      </div>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="onClick()" tab="tab3" href="">
+      <ion-icon aria-hidden="true" name="chatbox-ellipses-outline"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button (click)="onClick()" tab="tab3" href="">
+      <ion-icon aria-hidden="true" name="person-outline"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
